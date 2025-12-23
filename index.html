@@ -1839,7 +1839,7 @@ twoMonthsLater.setMonth(twoMonthsLater.getMonth() + 2);
                     }
 
                     // 18時以降に終了する予約は✕
-                    if (slotEnd.getHours() === 20 && slotEnd.getMinutes() > 0 || slotEnd.getHours() > 20) {
+                    if (slotEnd.getHours() === 20 && slotEnd.getMinutes() > 0 || slotEnd.getHours() > 30) {
                         cell.textContent = '✕';
                         cell.classList.add('unavailable');
                         continue;
