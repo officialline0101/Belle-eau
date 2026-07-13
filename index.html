@@ -977,6 +977,24 @@
             background-color: #c0392b;
             /* ホバー時に少し濃く */
         }
+
+        .price-tag {
+            display: block;
+            font-size: 13px;
+            color: #cc0000;
+            font-weight: bold;
+            margin-top: 2px;
+        }
+
+        .menu-note {
+            display: block;
+            font-size: 12px;
+            color: #cc0000;
+            margin-top: -5px;
+            margin-bottom: 10px;
+            text-align: center;
+            line-height: 1.6;
+        }
     </style>
 </head>
 
@@ -1026,11 +1044,11 @@
             <div class="info-text">▼メニューをお選びください▼</div>
             <div class="symptoms">
                 <button type="button" onclick="selectSymptom(this)" data-category="フェイシャルメニュー"
-                    data-price="15000">光フォトフェイシャル45分</button>
+                    data-price="7700" data-name="光フォトフェイシャル45分">光フォトフェイシャル45分<span class="price-tag">7,700円（税込）</span></button>
                 <button type="button" onclick="selectSymptom(this)" data-category="フェイシャルメニュー"
-                    data-price="15000">肌育フェイシャル45分</button>
+                    data-price="5500" data-name="肌育フェイシャル45分">肌育フェイシャル45分<span class="price-tag">5,500円（税込）</span></button>
                 <button type="button" onclick="selectSymptom(this)" data-category="フェイシャルメニュー"
-                    data-price="15000">エナジードレナージュフェイシャル60分</button>
+                    data-price="7700" data-name="エナジードレナージュフェイシャル60分">エナジードレナージュフェイシャル60分<span class="price-tag">7,700円（税込）</span></button>
             </div>
             <div class="labeltyuuou">
                 <span class="highlight-text">オプション</span>
@@ -1048,19 +1066,19 @@
             <div class="info-text">▼メニューをお選びください▼</div>
             <div class="symptoms">
                 <button type="button" onclick="selectSymptom(this)" data-category="ボディメニュー"
-                    data-price="15000">デトックスオイルリンパケア120分</button>
+                    data-price="6600" data-name="デトックスオイルリンパケア120分">デトックスオイルリンパケア120分<span class="price-tag">6,600円（税込）</span></button>
                 <button type="button" onclick="selectSymptom(this)" data-category="ボディメニュー"
-                    data-price="15000">エナジードレナージュケア30分<br>（気になる箇所2部位）</button>
+                    data-price="5500" data-name="エナジードレナージュケア30分（気になる箇所2部位）">エナジードレナージュケア30分<br>（気になる箇所2部位）<span class="price-tag">5,500円（税込）</span></button>
                 <button type="button" onclick="selectSymptom(this)" data-category="ボディメニュー"
-                    data-price="15000">エナジードレナージュケア60分</button>
+                    data-price="11000" data-name="エナジードレナージュケア60分">エナジードレナージュケア60分<span class="price-tag">11,000円（税込）</span></button>
                 <button type="button" onclick="selectSymptom(this)" data-category="ボディメニュー"
-                    data-price="15000">デトックスオイルリンパケア60分</button>
+                    data-price="6600" data-name="デトックスオイルリンパケア60分">デトックスオイルリンパケア60分<span class="price-tag">6,600円（税込）</span></button>
                 <button type="button" onclick="selectSymptom(this)" data-category="ボディメニュー"
-                    data-price="15000">デトックスオイルリンパケア90分</button>
+                    data-price="9900" data-name="デトックスオイルリンパケア90分">デトックスオイルリンパケア90分<span class="price-tag">9,900円（税込）</span></button>
                 <button type="button" onclick="selectSymptom(this)" data-category="ボディメニュー"
-                    data-price="15000">オイルリンパケア<br>×<br>エナジードレナージュ60分</button>
+                    data-price="8800" data-name="オイルリンパケア×エナジードレナージュ60分">オイルリンパケア<br>×<br>エナジードレナージュ60分<span class="price-tag">8,800円（税込）</span></button>
                 <button type="button" onclick="selectSymptom(this)" data-category="ボディメニュー"
-                    data-price="15000">オイルリンパケア<br>×<br>エナジードレナージュ90分</button>
+                    data-price="13000" data-name="オイルリンパケア×エナジードレナージュ90分">オイルリンパケア<br>×<br>エナジードレナージュ90分<span class="price-tag">13,000円（税込）</span></button>
             </div>
             <div class="labeltyuuou">
                 <span class="highlight-text">オプション</span>
@@ -1078,13 +1096,13 @@
             <div class="info-text">▼メニューをお選びください▼</div>
             <div class="symptoms">
                 <button type="button" onclick="selectSymptom(this)" data-category="セットメニュー"
-                    data-price="15000">デトックスオイルリンパケア<br>×<br>フェイシャル120分</button>
+                    data-price="12100" data-name="デトックスオイルリンパケア×フェイシャル120分">デトックスオイルリンパケア<br>×<br>フェイシャル120分<span class="price-tag">12,100円（税込）</span></button>
                 <button type="button" onclick="selectSymptom(this)" data-category="セットメニュー"
-                    data-price="15000">エナジードレナージュボディ全身<br>×<br>フェイシャル80分</button>
+                    data-price="12000" data-name="エナジードレナージュボディ全身×フェイシャル80分">エナジードレナージュボディ全身<br>×<br>フェイシャル80分<span class="price-tag">12,000円（税込）</span></button>
                 <button type="button" onclick="selectSymptom(this)" data-category="セットメニュー"
-                    data-price="15000">デトックスオイルリンパケア60分<br>×<br>光フォトフェイシャル45分</button>
+                    data-price="14300" data-name="デトックスオイルリンパケア60分×光フォトフェイシャル45分">デトックスオイルリンパケア60分<br>×<br>光フォトフェイシャル45分<span class="price-tag">14,300円（税込）</span></button>
                 <button type="button" onclick="selectSymptom(this)" data-category="セットメニュー"
-                    data-price="15000">エナジードレナージュ<br>×<br>光フォトフェイシャル</button>
+                    data-price="18700" data-name="エナジードレナージュ×光フォトフェイシャル">エナジードレナージュ<br>×<br>光フォトフェイシャル<span class="price-tag">18,700円（税込）</span></button>
             </div>
             <div class="labeltyuuou">
                 <span class="highlight-text">オプション</span>
@@ -1102,8 +1120,9 @@
             <div class="info-text">▼メニューをお選びください▼</div>
             <div class="symptoms">
                 <button type="button" onclick="selectSymptom(this)" data-category="光脱毛メニュー"
-                    data-price="15000">1ショット光脱毛メニュー</button>
+                    data-price="110" data-name="1ショット光脱毛メニュー">1ショット光脱毛メニュー<span class="price-tag">110円（税込）</span></button>
             </div>
+            <div class="menu-note">※ご予約には必ず30ショット以上の施術が必要なので、ご了承お願いいたします。</div>
         </div>
 
         <div id="speed" class="menu-section">
@@ -1113,11 +1132,11 @@
             <div class="info-text">▼メニューをお選びください▼</div>
             <div class="symptoms">
                 <button type="button" onclick="selectSymptom(this)" data-category="スピードメニュー"
-                    data-price="0">足ツボ30分</button>
+                    data-price="3300" data-name="足ツボ30分">足ツボ30分<span class="price-tag">3,300円（税込）</span></button>
                 <button type="button" onclick="selectSymptom(this)" data-category="スピードメニュー"
-                    data-price="0">ドライヘッドマッサージ30分</button>
+                    data-price="3300" data-name="ドライヘッドマッサージ">ドライヘッドマッサージ<span class="price-tag">3,300円（税込）</span></button>
                 <button type="button" onclick="selectSymptom(this)" data-category="スピードメニュー"
-                    data-price="0">ボディー（１部位）30分</button>
+                    data-price="3300" data-name="ボディー（1部位）">ボディー（1部位）<span class="price-tag">3,300円（税込）</span></button>
             </div>
         </div>
 
@@ -1232,8 +1251,8 @@
             '1ショット光脱毛メニュー': 60,
             '足ツボ30分': 90,
             'フェイシャル30分': 90,
-            'ドライヘッドマッサージ30分': 90,
-            'ボディー（１部位）30分': 90
+            'ドライヘッドマッサージ': 90,
+            'ボディー（1部位）': 90
         };
 
 
@@ -1287,7 +1306,7 @@
             let minutes = totalMinutes % 60;
             let totalTimeText = `<span style="color:#0c0c0c;"><strong>所要時間</strong></span>：${hours > 0 ? hours + '時間' : ''}${minutes}分`;
 
-            const totalAmountText = `<span style="color:#0c0c0c;"><strong>合計金額</strong></span>：¥${menuPrice + optionsPrice}`;
+            const totalAmountText = `<span style="color:#0c0c0c;"><strong>合計金額</strong></span>：¥${(menuPrice + optionsPrice).toLocaleString()}`;
             const selectedDateText = selectedFullDate ? `<span style="color:#0c0c0c;"><strong>希望日時</strong></span>：${selectedFullDate}` : '・日時が未選択です';
 
             // 修正ボタン付きのHTMLを作成
@@ -1310,6 +1329,10 @@
         <div class="info-row">
             <p>${irradiationsText}</p>
             <button class="edit-button" onclick="scrollToElement('firstirradiations')">修正</button>
+        </div>
+        <hr>
+        <div class="info-row">
+            <p>${totalAmountText}</p>
         </div>
         <hr>
         <div class="info-row">
@@ -1406,7 +1429,7 @@
 
             // 選択済みから再計算
             updatedSelectedButtons.forEach((btn) => {
-                const selectedMenuName = btn.textContent;
+                const selectedMenuName = btn.getAttribute('data-name') || btn.textContent;
                 const category = btn.getAttribute('data-category');
                 selectedSymptom.push({ category, name: selectedMenuName });
                 selectedMenuTime += menuTimes[selectedMenuName] || 0;
@@ -1489,7 +1512,7 @@
 
             // 対応する元ボタンの active を外す
             document.querySelectorAll('.symptoms button').forEach(btn => {
-                if (btn.textContent === name && btn.getAttribute('data-category') === category) {
+                if ((btn.getAttribute('data-name') || btn.textContent) === name && btn.getAttribute('data-category') === category) {
                     btn.classList.remove('active');
                 }
             });
@@ -1503,7 +1526,7 @@
             selectedSymptom.forEach(item => {
                 selectedMenuTime += menuTimes[item.name] || 0;
                 const btn = [...document.querySelectorAll('.symptoms button')].find(
-                    b => b.textContent === item.name && b.getAttribute('data-category') === item.category
+                    b => (b.getAttribute('data-name') || b.textContent) === item.name && b.getAttribute('data-category') === item.category
                 );
                 if (btn) menuPrice += parseInt(btn.getAttribute('data-price'), 10) || 0;
             });
@@ -1729,7 +1752,7 @@
 
             liff.sendMessages([{
                 type: 'text',
-                text: `【予約フォーム】\nお名前：${formData.name}\n電話番号：${formData.phone}\nご来店回数：${formData.visitCount}\nメニュー：${menuAndIrradiations}\n希望日時：\n${formData.dates[0]}\nメッセージ：${formData.message}`
+                text: `【予約フォーム】\nお名前：${formData.name}\n電話番号：${formData.phone}\nご来店回数：${formData.visitCount}\nメニュー：${menuAndIrradiations}\n合計金額：¥${(menuPrice + optionsPrice).toLocaleString()}\n希望日時：\n${formData.dates[0]}\nメッセージ：${formData.message}`
             }]).then(() => {
                 alert('当日キャンセルは無いようにお願いいたします。');
                 liff.closeWindow();
